@@ -324,12 +324,26 @@ body {
 }
 
 .about-team-link {
+  display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   /* background-color: var(--main-color-light); */
-  background-color: #2196f3;
-  display: block;
+  background-color: #f5ebaf;
+}
+
+.clients {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--accent-color-one);
 }
 
 /* Footer */
@@ -385,8 +399,18 @@ body {
   display: flex;
   align-items: baseline;
 }
-.social {
+
+.footer-social {
+  flex-wrap: wrap;
+  max-width: 206px;
+  display: flex;
   margin-left: 70px;
+}
+
+.footer-social-items {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .footer-social-text {
@@ -395,6 +419,15 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-color-light);
+  margin-bottom: 20px;
+}
+
+.footer-social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Portfolio */
