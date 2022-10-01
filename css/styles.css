@@ -11,6 +11,7 @@
   --portfolio-cards-border: #eeeeee;
   --header-border-line-bottom: #ececec;
   --hero-background: #c4c4c4;
+  --clients-logo-color: #afb1b8;
 }
 
 p,
@@ -137,12 +138,27 @@ body {
   color: var(--secondary-color-font);
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .contacts-item:hover,
-.contacts-item:focus {
+.contacts-item:focus,
+.icon:hover,
+.icon:focus {
   color: var(--accent-color-two);
 }
+
+.contact-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /* Sections */
 
 .section {
@@ -236,6 +252,34 @@ body {
 
 .advantages-title {
   width: calc((100%-90px) / 4);
+}
+
+.advantages-title::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-color-team);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.antenna-icon::before {
+  background-image: url("../images/antenna.svg");
+}
+
+.clock-icon::before {
+  background-image: url("../images/clock.svg");
+}
+
+.diagram-icon::before {
+  background-image: url("../images/diagram.svg");
+}
+
+.astronaut-icon::before {
+  background-image: url("../images/astronaut.svg");
 }
 
 .advantages-subtitle {
@@ -344,6 +388,32 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--accent-color-one);
+}
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients-list-items {
+  display: flex;
+  width: calc((100%-150px) / 6);
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-item {
+  display: block;
+  text-align: center;
+  color: var(--clients-logo-color);
+}
+
+.clients-logo {
+  text-align: center;
+  align-items: center;
+  fill: currentColor;
 }
 
 /* Footer */
